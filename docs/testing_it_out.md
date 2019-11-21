@@ -126,8 +126,3 @@ Upon receiving the new bitstream, the LED on the Nano board should cycle through
 twice as fast:
 
 ![](/images/testing_it_out/led_cycle.gif)
-
-
-
-
-**[Next: Testing It Out](/testing_it_out)**
