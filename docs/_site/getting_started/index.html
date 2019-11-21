@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+<title>WHERE IS EVERYTHING? &vert; TANG NANO USER</title>
+<meta name="description" content="Getting Started with the Tang Nano FPGA Board.">
+<meta name="keywords" content="Tang Nano, FPGA, Sipeed, GOWIN, home">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://localhost:4000/images/logo.png">
+<meta name="twitter:title" content="Where is Everything?">
+<meta name="twitter:description" content="Getting Started with the Tang Nano FPGA Board.">
+<meta name="twitter:creator" content="@xesscorp">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Where is Everything?">
+<meta property="og:description" content="Getting Started with the Tang Nano FPGA Board.">
+<meta property="og:url" content="http://localhost:4000/getting_started/">
+<meta property="og:site_name" content="Tang Nano User">
+<meta property="og:image" content="http://localhost:4000/images/">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/getting_started/">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Tang Nano User Feed">
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600,300,800,700' rel='stylesheet' type='text/css'>
+	<!-- <link rel="stylesheet" href="http://localhost:4000/assets/css/vendor/font-awesome.min.css"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/vendor/normalize.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/vendor/nprogress.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/vendor/foundation.min.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/style.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/post.css">
+
+
+
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+    </head>
+    <body class="post-template page" itemscope itemtype="http://schema.org/WebPage">
+        <main id="notepad-page-container" class="notepad-page-container" role="main">
+            <header class="notepad-page-header">
+                <div class="notepad-page-menu-header">
+                    <a class="notepad-blog-logo" href="http://localhost:4000">
+                    <img src="http://localhost:4000/images/logo.png" alt="Blog Logo">
+                    </a>
+                    <div class="notepad-blog-menu">
+                        <div class="notepad-mobile-menu show-for-small">
+                            <a href="#"><i class="fa fa-bars"></i></a>
+                        </div>
+                        <ul class="notepad-menu">
+                            <li class="notepad-mobile-close-btn show-for-small text-right">
+                                <a href="#"><i class="fa fa-times"></i></a>
+                            </li>
+                            
+                            <li>
+                                <a href="http://localhost:4000/">Home</a>
+                                 
+                            </li>
+                            
+                            <li>
+                                <a href="http://localhost:4000/blog">Blog</a>
+                                 
+                            </li>
+                            
+                            <li>
+                                <a href="http://github.com/xesscorp/tang_nano_user">Github</a>
+                                 
+                            </li>
+                            
+                            <li>
+                                <a href="http://localhost:4000/about">About</a>
+                                 
+                            </li>
+                                        
+                            <li><a href="http://localhost:4000/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="notepad-page-title row">
+                    <div class="small-12 columns">
+                        <h1>Where is Everything?</h1>
+                    </div>
+                </div>
+            </header>
+            <article class="notepad-page-content">
+                <div><p>I ordered my Tang Nano board from <a href="https://www.seeedstudio.com/Sipeed-Tang-Nano-FPGA-board-powered-by-GW1N-1-FPGA-p-4304.html">Seeed</a>
+and this is what I got:</p>
+
+<p><img src="/images/getting_started/seeed_pckg.png" alt="" /></p>
+
+<p>Yep, that’s it: a board and two headers.
+No documentation. Not even a link.
+Not exactly the friendly introduction to FPGAs you’d hoped for.
+So what now?</p>
+
+<p>Well, everything is available on the internet if you look hard enough.
+In order to save you the trouble, here’s a list of stuff you’ll want:</p>
+
+<ul>
+  <li><strong><a href="http://tangnano.sipeed.com/en/">Sipeed Tang Nano Introduction</a></strong> is Sipeed’s intro to their board, complete with broken links and everything!
+It does list the major components of the board.</li>
+  <li><strong><a href="http://dl.sipeed.com/TANG/Nano/HDK/Tang-NANO-2704(Schematic).pdf">Tang Nano Schematic</a></strong> shows how the board’s parts are connected.
+This is important for finding out what’s connected to the FPGA’s pins.
+You can also get a <a href="http://dl.sipeed.com/TANG/Nano/HDK/Tang-NANO-2704(Assembly%20drawing).pdf">drawing</a> that shows where the parts are
+located on the board if that interests you.</li>
+  <li><strong><a href="http://dl.sipeed.com/TANG/Nano/HDK/GW1N-Datasheet(English)/GW1N%20series%20of%20FPGA%20Products%20Data%20Sheet.pdf">GW1N FPGA Datasheet</a></strong>
+is Sipeed’s copy of GOWIN’s FPGA datasheet.
+(You can get the same thing <a href="https://www.gowinsemi.com/en/document/chkLogin/?a=upload%2Fdatabase_doc%2F178%2Fdocument%2F5da91c1e26c4e.pdf">here</a>,
+but you’ll need to register and then sign in to get it. You even have to pass a CAPTCHA. <em>Sigh.</em>)</li>
+  <li><strong><a href="http://dl.sipeed.com/TANG/Nano/HDK/GW1N-Datasheet(English)/GW1N-1%20pinout.xlsx">GW1N Pinout Spreadsheet</a></strong> lists the pins
+and their functions for all the GW1N-1 FPGA packages.
+The <strong>QN48</strong> column has the pin numbers for the particular FPGA package used on the Nano board.</li>
+  <li><strong><a href="https://www.gowinsemi.com/en/support/download_eda/">GOWIN EDA software</a></strong> compiles VHDL/Verilog code into bitstreams for the FPGA.
+You need this and you’ll <em>have</em> to register and sign in to get it.
+There’s no way around it (so far).
+While you’re there, you might as well get the
+<a href="https://www.gowinsemi.com/en/document/chkLogin/?a=upload%2Fdatabase_doc%2F379%2Fdocument%2F5dca6a3577b17.pdf">user manual</a>.</li>
+  <li><strong><a href="https://www.gowinsemi.com/en/support/license/">Licenses</a></strong> from GOWIN are needed to enable the software.
+Fulfilling your license request may take a while depending upon how many hundreds or thousands of people buy this board.
+As an alternative, you can use Sipeed’s <a href="http://dl.sipeed.com/TANG/Nano/IDE/gowin.lic">license</a>,
+their <a href="http://dl.sipeed.com/TANG/Nano/IDE/gowin_Synplifypro.lic">Synplify license</a>,
+and these <a href="http://dl.sipeed.com/TANG/Nano/IDE/license_readme.txt">instructions</a>.
+I’ll go over this in more detail below.</li>
+  <li><strong><a href="https://github.com/sipeed/Tang-Nano-examples">Design examples</a></strong> for the Nano board are helpful for getting
+started and verifying that your EDA software is working.</li>
+</ul>
+
+<p>The next step is to install the EDA software and set up the license.
+I’m using Windows 10, so I just double-clicked the <code class="highlighter-rouge">Gowin_V1.9.2Beta_win.zip</code> file and then double-clicked
+the <code class="highlighter-rouge">Gowin_V1.9.2Beta_win.exe</code> installer that was inside:</p>
+
+<p><img src="/images/getting_started/EDA_install.png" alt="" /></p>
+
+<p>I agreed to the license terms and installed in the default location.
+After the installation completed, I double-clicked the <code class="highlighter-rouge">Gowin_V1.9.2Beta</code> icon and the following screen appeared:</p>
+
+<p><img src="/images/getting_started/initial_EDA_screen.png" alt="" /></p>
+
+<p>Next it’s time to install the license:</p>
+
+<p><img src="/images/getting_started/manage_lic.png" alt="" /></p>
+
+<p>I received licenses from GOWIN for their software and for Synplify Pro, both of which
+I placed in a top-level directory called <code class="highlighter-rouge">.Gowin</code> (but you can use whatever you like).
+I selected the option <code class="highlighter-rouge">Use Local License File</code> and entered the location of the GOWIN license file.
+(I’ll ignore the Synplify Pro license for now.)
+Then click <code class="highlighter-rouge">Save</code> and the software is ready to go.</p>
+
+<p><img src="/images/getting_started/local_lic.png" alt="" /></p>
+
+<p>If you haven’t got any licenses from GOWIN, Sipeed lets you “borrow” one from their license server.
+Just select <code class="highlighter-rouge">Use Floating License Server</code> and type in the server’s IP address
+(read Sipeed’s <a href="http://dl.sipeed.com/TANG/Nano/IDE/license_readme.txt">license instructions</a>
+to get the most up-to-date IP address).
+Then click the <code class="highlighter-rouge">Test Connection</code> button to see if a valid license has been checked out:</p>
+
+<p><img src="/images/getting_started/float_lic.png" alt="" /></p>
+
+<p>You’ll get a <code class="highlighter-rouge">Successed</code> (sic) message if a valid license was obtained.
+Then click <code class="highlighter-rouge">Save</code> and the software is enabled <em>for the current session</em>.
+Each time you start the software, it will automatically reach out to the Sipeed
+server to get another license.
+If you’re not connected to the internet or the license server is not available, then
+your software won’t run.
+(That’s one reason you might want to get your own local license.)</p>
+
+<p><img src="/images/getting_started/float_lic_test.png" alt="" /></p>
+
+<p>At this point you should have working software that will create bitstreams for the FPGA.
+Let’s try it out!</p>
+
+<p><strong><a href="/testing_it_out">Next: Testing It Out</a></strong></p>
+</div>
+            </article>
+            <div class="cf"></div>
+            <footer class="notepad-site-footer">
+    <div class="copyright">
+        <section>
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+                <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+            </a>
+            <br /><br />
+            <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Tang Nano User website</span> by 
+            <a xmlns:cc="http://creativecommons.org/ns#" href="www.xess.com" property="cc:attributionName" rel="cc:attributionURL">
+                XESS Corporation
+            </a> 
+            is licensed under a 
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+                Creative Commons Attribution 4.0 International License
+            </a>.
+        </section>
+        <br />
+        <p>
+            <a href='http://www.catb.org/hacker-emblem/' target="_blank"><img src='http://localhost:4000/assets/img/hacker.png' alt='hacker emblem' /></a>
+            <a href="http://endsoftpatents.org/innovating-without-patents" target="_blank"><img style="border-width:0" src="http://localhost:4000/assets/img/patent-free.png"></a>
+        </p>
+    </div>
+    <div class="social-icons">
+        
+        
+        <a href="http://twitter.com/xesscorp">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-twitter fa-stack-1x"></i>
+            </span>
+        </a>
+        
+        
+        
+        
+        <a href="http://github.com/xesscorp">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-github fa-stack-1x"></i>
+            </span>
+        </a>
+        
+        
+    </div>
+    
+    <div class="cf"></div>
+</footer>
+
+        </main>
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+    <script src="http://localhost:4000/assets/js/vendor/modernizr.js"></script>
+    <script src="http://localhost:4000/assets/js/foundation.min.js"></script>
+    
+    <script src="http://localhost:4000/assets/js/notepad.js"></script>
+    <script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+    <script src="http://localhost:4000/assets/js/vendor/nprogress.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/sigma.js/1.0.3/sigma.min.js"></script>
+
+    <script>
+      $(document).foundation();
+    </script>
+
+
+<script>NProgress.start();var interval=setInterval(function(){NProgress.inc()},1000);jQuery(window).load(function(){clearInterval(interval);NProgress.done()});jQuery(window).unload(function(){NProgress.start()});</script>
+  
+    </body>
+</html>

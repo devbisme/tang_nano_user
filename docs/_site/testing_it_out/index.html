@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+<title>TESTING IT OUT &vert; TANG NANO USER</title>
+<meta name="description" content="Testing the Nano board with an existing example design.">
+<meta name="keywords" content="Tang Nano, FPGA, Sipeed, GOWIN, home">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://localhost:4000/images/logo.png">
+<meta name="twitter:title" content="Testing It Out">
+<meta name="twitter:description" content="Testing the Nano board with an existing example design.">
+<meta name="twitter:creator" content="@xesscorp">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Testing It Out">
+<meta property="og:description" content="Testing the Nano board with an existing example design.">
+<meta property="og:url" content="http://localhost:4000/testing_it_out/">
+<meta property="og:site_name" content="Tang Nano User">
+<meta property="og:image" content="http://localhost:4000/images/">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/testing_it_out/">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Tang Nano User Feed">
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600,300,800,700' rel='stylesheet' type='text/css'>
+	<!-- <link rel="stylesheet" href="http://localhost:4000/assets/css/vendor/font-awesome.min.css"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/vendor/normalize.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/vendor/nprogress.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/vendor/foundation.min.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/style.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/post.css">
+
+
+
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+    </head>
+    <body class="post-template page" itemscope itemtype="http://schema.org/WebPage">
+        <main id="notepad-page-container" class="notepad-page-container" role="main">
+            <header class="notepad-page-header">
+                <div class="notepad-page-menu-header">
+                    <a class="notepad-blog-logo" href="http://localhost:4000">
+                    <img src="http://localhost:4000/images/logo.png" alt="Blog Logo">
+                    </a>
+                    <div class="notepad-blog-menu">
+                        <div class="notepad-mobile-menu show-for-small">
+                            <a href="#"><i class="fa fa-bars"></i></a>
+                        </div>
+                        <ul class="notepad-menu">
+                            <li class="notepad-mobile-close-btn show-for-small text-right">
+                                <a href="#"><i class="fa fa-times"></i></a>
+                            </li>
+                            
+                            <li>
+                                <a href="http://localhost:4000/">Home</a>
+                                 
+                            </li>
+                            
+                            <li>
+                                <a href="http://localhost:4000/blog">Blog</a>
+                                 
+                            </li>
+                            
+                            <li>
+                                <a href="http://github.com/xesscorp/tang_nano_user">Github</a>
+                                 
+                            </li>
+                            
+                            <li>
+                                <a href="http://localhost:4000/about">About</a>
+                                 
+                            </li>
+                                        
+                            <li><a href="http://localhost:4000/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="notepad-page-title row">
+                    <div class="small-12 columns">
+                        <h1>Testing It Out</h1>
+                    </div>
+                </div>
+            </header>
+            <article class="notepad-page-content">
+                <div><p>Here, we’ll try to test the Nano board and the GOWIN software with a minimal amount of work.</p>
+
+<p>The first step is to plug a USB-C cable into the Nano board.
+Under Windows, the board will show up as a COM port and
+an LED should repeatedly blink <code class="highlighter-rouge">green, blue, red, blank, ...</code> over a period of two seconds.
+(The Nano comes configured with a bitstream in flash that blinks the LED.)</p>
+
+<p>Next, download an existing design example from Sipeed’s repository:</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>git clone https://github.com/sipeed/Tang-Nano-examples.git
+</code></pre>
+</div>
+
+<p>(If you don’t want to use git, then you can just download a <a href="https://github.com/sipeed/Tang-Nano-examples/archive/master.zip">zip archive</a>.)</p>
+
+<p>Then, go into the <code class="highlighter-rouge">Tang-Nano-examples\example_led\led_prj</code> directory and double-click the <code class="highlighter-rouge">led_prj.gprj</code> file.
+This will load the project into the GOWIN EDA software:</p>
+
+<p><img src="/images/testing_it_out/initial_screen.png" alt="" /></p>
+
+<p>This project is for an RGB LED blinker that is similar to the design that is currently
+running on the Nano board.</p>
+
+<p>In the <code class="highlighter-rouge">Design</code> tab, you can see the <code class="highlighter-rouge">led.v</code> Verilog file that describes the behavior of the LED blinker,
+and the <code class="highlighter-rouge">led_prj.cst</code> constraints file that assigns I/O signals in the Verilog code to specific pins of the FPGA
+such as the ones connected to the RGB LED.
+Double-clicking either file will show you their contents.</p>
+
+<p>Our first test is to compile this design and load it into the Nano board.
+Click on the <code class="highlighter-rouge">Process</code> tab and the compilation steps will appear:</p>
+
+<p><img src="/images/testing_it_out/compilation_steps.png" alt="" /></p>
+
+<p>Since the Verilog code and constraints are already there, we’ll mainly be interested in the
+following steps:</p>
+
+<ul>
+  <li><strong>Synthesis</strong> where the Verilog code is translated into logic gates and registers that perform
+the functions in the code;</li>
+  <li><strong>Place &amp; route</strong> where the gates and registers are distributed across the logic resources of the
+FPGA and then wiring is routed to connect their inputs and outputs;</li>
+  <li><strong>Program Device</strong> where the bits encoding the placed-and-routed circuitry
+are streamed into the physical FPGA device.</li>
+</ul>
+
+<p>Starting with the synthesis step, first right-click on the <code class="highlighter-rouge">Synthesize</code> step and
+select <code class="highlighter-rouge">Configuration</code>:</p>
+
+<p><img src="/images/testing_it_out/synth_configuration.png" alt="" /></p>
+
+<p>The Gowin EDA software supports two different synthesizers:
+Synplify Pro and GOWIN’s in-house synthesizer.
+Since we didn’t install the Synplify Pro license when we were setting up the software,
+we’re going to use GOWIN’s synthesizer.
+In the <code class="highlighter-rouge">Configurations</code> dialog window, select <code class="highlighter-rouge">GowinSynthesis</code>.
+Then click <code class="highlighter-rouge">OK</code> and return to the main window.</p>
+
+<p><img src="/images/testing_it_out/select_gowin_synth.png" alt="" /></p>
+
+<p>Now we can generate the FPGA bitstream.
+Just right-click on the <code class="highlighter-rouge">Place &amp; Route</code> step and select <code class="highlighter-rouge">Rerun</code>.
+This will initiate the synthesizer and then the place &amp; route steps.</p>
+
+<p><img src="/images/testing_it_out/initiate_synth_place_route.png" alt="" /></p>
+
+<p>Upon completion, you will see green checkmarks by the synthesis and place &amp; route steps
+and a bunch of info about the progress of the compilation in the lower pane:</p>
+
+<p><img src="/images/testing_it_out/synth_place_route_done.png" alt="" /></p>
+
+<p>One of the progress items will be <code class="highlighter-rouge">Bitstream generation completed.</code>
+That means there’s a bitstream available to download into the Nano board’s FPGA.
+To do that, double-click the <code class="highlighter-rouge">Program Device</code> step and the following dialog will appear:</p>
+
+<p><img src="/images/testing_it_out/programming_dialog.png" alt="" /></p>
+
+<p>The FPGA can store its bitstream in several ways: in its internal static RAM (volatile),
+or it’s internal flash (nonvolatile), or an external flash, or from an external device
+via an SPI bus.
+We need to tell the device programmer which of those methods to use.
+To do that, right-click on the first entry in the list and select <code class="highlighter-rouge">Configure Device</code>:</p>
+
+<p><img src="/images/testing_it_out/configure_device.png" alt="" /></p>
+
+<p>Then in the <code class="highlighter-rouge">Device configuration</code> dialog, select <code class="highlighter-rouge">SRAM Mode</code> and <code class="highlighter-rouge">SRAM Program</code>
+so the bitstream will be stored in the FPGA’s internal static RAM.
+(SRAM programming is faster than programming the flash and, besides, we don’t want to keep
+this design around for very long anyway.)
+Then click the <code class="highlighter-rouge">Save</code> button.</p>
+
+<p><img src="/images/testing_it_out/select_SRAM_config.png" alt="" /></p>
+
+<p>Upon returning to the previous dialog, right-click on the first entry and select <code class="highlighter-rouge">Program/Configure</code>.
+This initiates the transfer of the bitstream from your PC through the USB cable into the FPGA’s SRAM.</p>
+
+<p><img src="/images/testing_it_out/start_programming.png" alt="" /></p>
+
+<p>A progress bar will appear to track the transfer, but it won’t be around very long:</p>
+
+<p><img src="/images/testing_it_out/config_progress.png" alt="" /></p>
+
+<p>After the bitstream is transferred to the FPGA you should see … well, it’s not really any different!
+That’s because the design we compiled is not really different from the one that was preloaded into
+the Nano’s flash.
+That makes it hard to tell if our bitstream works or not.
+In order to be sure, we’ll need to change the code so the LED blinks differently.
+Close the <code class="highlighter-rouge">Programmer</code> dialog window and then go back to the <code class="highlighter-rouge">Design</code> tab and
+double-click the <code class="highlighter-rouge">led.v</code> file to open the Verilog editor:</p>
+
+<p><img src="/images/testing_it_out/edit_verilog.png" alt="" /></p>
+
+<p>Change the two instances of <code class="highlighter-rouge">24'd1200_000</code> to <code class="highlighter-rouge">24'd0600_000</code>.
+This will halve the duration of each phase of the <code class="highlighter-rouge">red, green, blue</code> sequence so it will cycle faster.
+Save the updated Verilog file, switch over to the <code class="highlighter-rouge">Process</code> tab, and double-click the
+<code class="highlighter-rouge">Place &amp; Route</code> step to recompile the new code into a bitstream.
+Then double-click the <code class="highlighter-rouge">Program Device</code> step and reload the FPGA’s SRAM with the new bitstream.
+(You won’t need to select the SRAM as the destination for the bitstream: the software will
+remember that from last time.)</p>
+
+<p>Upon receiving the new bitstream, the LED on the Nano board should cycle through the colors
+twice as fast:</p>
+
+<p><img src="/images/testing_it_out/led_cycle.gif" alt="" /></p>
+
+<p><strong><a href="/testing_it_out">Next: Testing It Out</a></strong></p>
+</div>
+            </article>
+            <div class="cf"></div>
+            <footer class="notepad-site-footer">
+    <div class="copyright">
+        <section>
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+                <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+            </a>
+            <br /><br />
+            <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Tang Nano User website</span> by 
+            <a xmlns:cc="http://creativecommons.org/ns#" href="www.xess.com" property="cc:attributionName" rel="cc:attributionURL">
+                XESS Corporation
+            </a> 
+            is licensed under a 
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+                Creative Commons Attribution 4.0 International License
+            </a>.
+        </section>
+        <br />
+        <p>
+            <a href='http://www.catb.org/hacker-emblem/' target="_blank"><img src='http://localhost:4000/assets/img/hacker.png' alt='hacker emblem' /></a>
+            <a href="http://endsoftpatents.org/innovating-without-patents" target="_blank"><img style="border-width:0" src="http://localhost:4000/assets/img/patent-free.png"></a>
+        </p>
+    </div>
+    <div class="social-icons">
+        
+        
+        <a href="http://twitter.com/xesscorp">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-twitter fa-stack-1x"></i>
+            </span>
+        </a>
+        
+        
+        
+        
+        <a href="http://github.com/xesscorp">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-github fa-stack-1x"></i>
+            </span>
+        </a>
+        
+        
+    </div>
+    
+    <div class="cf"></div>
+</footer>
+
+        </main>
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+    <script src="http://localhost:4000/assets/js/vendor/modernizr.js"></script>
+    <script src="http://localhost:4000/assets/js/foundation.min.js"></script>
+    
+    <script src="http://localhost:4000/assets/js/notepad.js"></script>
+    <script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+    <script src="http://localhost:4000/assets/js/vendor/nprogress.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/sigma.js/1.0.3/sigma.min.js"></script>
+
+    <script>
+      $(document).foundation();
+    </script>
+
+
+<script>NProgress.start();var interval=setInterval(function(){NProgress.inc()},1000);jQuery(window).load(function(){clearInterval(interval);NProgress.done()});jQuery(window).unload(function(){NProgress.start()});</script>
+  
+    </body>
+</html>

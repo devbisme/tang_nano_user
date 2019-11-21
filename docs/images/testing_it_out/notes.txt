@@ -1,0 +1,8 @@
+Converting Video to Animated GIF
+===================================
+
+Crop the view:
+    ffmpeg -i VID_20191121_103354.mp4 -filter:v "crop=720:250:0:400" -c:a copy led_cycle.mp4
+
+Reduce the frame rate, scale it, crop the time:
+    ffmpeg -i led_cycle.mp4 -r 15 -vf scale=360:125 -ss 0 -t 1.5 led_cycle.gif
