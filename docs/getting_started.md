@@ -8,7 +8,7 @@ tags: [Tang Nano, FPGA, Sipeed, GOWIN, home]
 I ordered my Tang Nano board from [Seeed](https://www.seeedstudio.com/Sipeed-Tang-Nano-FPGA-board-powered-by-GW1N-1-FPGA-p-4304.html)
 and this is what I got:
 
-![](images/getting_started/seeed_pckg.png)
+![]({{site.url}}/images/getting_started/seeed_pckg.png)
 
 Yep, that's it: a board and two headers.
 No documentation. Not even a link.
@@ -49,16 +49,16 @@ The next step is to install the EDA software and set up the license.
 I'm using Windows 10, so I just double-clicked the `Gowin_V1.9.2Beta_win.zip` file and then double-clicked
 the `Gowin_V1.9.2Beta_win.exe` installer that was inside:
 
-![](images/getting_started/EDA_install.png)
+![]({{site.url}}/images/getting_started/EDA_install.png)
 
 I agreed to the license terms and installed in the default location.
 After the installation completed, I double-clicked the `Gowin_V1.9.2Beta` icon and the following screen appeared:
 
-![](images/getting_started/initial_EDA_screen.png)
+![]({{site.url}}/images/getting_started/initial_EDA_screen.png)
 
 Next it's time to install the license:
 
-![](images/getting_started/manage_lic.png)
+![]({{site.url}}/images/getting_started/manage_lic.png)
 
 I received licenses from GOWIN for their software and for Synplify Pro, both of which
 I placed in a top-level directory called `.Gowin` (but you can use whatever you like).
@@ -66,7 +66,7 @@ I selected the option `Use Local License File` and entered the location of the G
 (I'll ignore the Synplify Pro license for now.)
 Then click `Save` and the software is ready to go.
 
-![](images/getting_started/local_lic.png)
+![]({{site.url}}/images/getting_started/local_lic.png)
 
 If you haven't got any licenses from GOWIN, Sipeed lets you "borrow" one from their license server.
 Just select `Use Floating License Server` and type in the server's IP address
@@ -74,7 +74,7 @@ Just select `Use Floating License Server` and type in the server's IP address
 to get the most up-to-date IP address).
 Then click the `Test Connection` button to see if a valid license has been checked out:
 
-![](images/getting_started/float_lic.png)
+![]({{site.url}}/images/getting_started/float_lic.png)
 
 You'll get a `Successed` (sic) message if a valid license was obtained.
 Then click `Save` and the software is enabled *for the current session*.
@@ -84,7 +84,7 @@ If you're not connected to the internet or the license server is not available, 
 your software won't run.
 (That's one reason you might want to get your own local license.)
 
-![](images/getting_started/float_lic_test.png)
+![]({{site.url}}/images/getting_started/float_lic_test.png)
 
 At this point you should have working software that will create bitstreams for the FPGA.
 Let's try it out!
