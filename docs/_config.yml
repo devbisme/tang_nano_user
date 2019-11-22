@@ -15,11 +15,12 @@ url:        	 https://xesscorp.github.io/tang_nano_user/docs/_site
 owner:
   name:           XESS Corp.
   avatar:         xesscorp.png
-  email:          tang_nano@xess.com
+  email:          tang_nano_user@xess.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
   description:    Former manufacturer of FPGA development boards.
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        xesscorp
+  twitter:        "@xesscorp"
+  twitter2:       "@devbisme"
   github:         xesscorp    
   # For Google Authorship https://plus.google.com/authorship
   #google_plus:    https://plus.google.com/u/0/+AmeyJadiye
