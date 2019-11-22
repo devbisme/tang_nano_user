@@ -89,4 +89,4 @@ your software won't run.
 At this point you should have working software that will create bitstreams for the FPGA.
 Let's try it out!
 
-**[Next: Testing It Out](/testing_it_out)**
+**[Next: Testing It Out]({{site.url}}/testing_it_out)**

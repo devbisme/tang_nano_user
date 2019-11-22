@@ -30,8 +30,12 @@ Feel free to use them as they become available: everything is covered under open
 
 Onward!
 
+Preliminaries
+================
+
+* [Getting Started: Where is Everything?]({{site.url}}/getting_started)
+* [Testing It Out: Running a Pre-Built Example]({{site.url}}/testing_it_out)
+
 Projects
 ================
 
-* [Getting Started: Where is Everything?](getting_started)
-* [Testing It Out: Running a Pre-Built Example](testing_it_out)
