@@ -129,7 +129,7 @@ an LED should repeatedly blink <code class="highlighter-rouge">green, blue, red,
 <p>Then, go into the <code class="highlighter-rouge">Tang-Nano-examples\example_led\led_prj</code> directory and double-click the <code class="highlighter-rouge">led_prj.gprj</code> file.
 This will load the project into the GOWIN EDA software:</p>
 
-<p><img src="/https://xesscorp.github.io/tang_nano_user/docs/_site/images/testing_it_out/initial_screen.png" alt="" /></p>
+<p><img src="https://xesscorp.github.io/tang_nano_user/docs/_site/images/testing_it_out/initial_screen.png" alt="" /></p>
 
 <p>This project is for an RGB LED blinker that is similar to the design that is currently
 running on the Nano board.</p>
@@ -142,7 +142,7 @@ Double-clicking either file will show you their contents.</p>
 <p>Our first test is to compile this design and load it into the Nano board.
 Click on the <code class="highlighter-rouge">Process</code> tab and the compilation steps will appear:</p>
 
-<p><img src="/https://xesscorp.github.io/tang_nano_user/docs/_site/images/testing_it_out/compilation_steps.png" alt="" /></p>
+<p><img src="https://xesscorp.github.io/tang_nano_user/docs/_site/images/testing_it_out/compilation_steps.png" alt="" /></p>
 
 <p>Since the Verilog code and constraints are already there, we’ll mainly be interested in the
 following steps:</p>
@@ -159,7 +159,7 @@ are streamed into the physical FPGA device.</li>
 <p>Starting with the synthesis step, first right-click on the <code class="highlighter-rouge">Synthesize</code> step and
 select <code class="highlighter-rouge">Configuration</code>:</p>
 
-<p><img src="/https://xesscorp.github.io/tang_nano_user/docs/_site/images/testing_it_out/synth_configuration.png" alt="" /></p>
+<p><img src="https://xesscorp.github.io/tang_nano_user/docs/_site/images/testing_it_out/synth_configuration.png" alt="" /></p>
 
 <p>The Gowin EDA software supports two different synthesizers:
 Synplify Pro and GOWIN’s in-house synthesizer.
@@ -168,24 +168,24 @@ we’re going to use GOWIN’s synthesizer.
 In the <code class="highlighter-rouge">Configurations</code> dialog window, select <code class="highlighter-rouge">GowinSynthesis</code>.
 Then click <code class="highlighter-rouge">OK</code> and return to the main window.</p>
 
-<p><img src="/https://xesscorp.github.io/tang_nano_user/docs/_site/images/testing_it_out/select_gowin_synth.png" alt="" /></p>
+<p><img src="https://xesscorp.github.io/tang_nano_user/docs/_site/images/testing_it_out/select_gowin_synth.png" alt="" /></p>
 
 <p>Now we can generate the FPGA bitstream.
 Just right-click on the <code class="highlighter-rouge">Place &amp; Route</code> step and select <code class="highlighter-rouge">Rerun</code>.
 This will initiate the synthesizer and then the place &amp; route steps.</p>
 
-<p><img src="/https://xesscorp.github.io/tang_nano_user/docs/_site/images/testing_it_out/initiate_synth_place_route.png" alt="" /></p>
+<p><img src="https://xesscorp.github.io/tang_nano_user/docs/_site/images/testing_it_out/initiate_synth_place_route.png" alt="" /></p>
 
 <p>Upon completion, you will see green checkmarks by the synthesis and place &amp; route steps
 and a bunch of info about the progress of the compilation in the lower pane:</p>
 
-<p><img src="/https://xesscorp.github.io/tang_nano_user/docs/_site/images/testing_it_out/synth_place_route_done.png" alt="" /></p>
+<p><img src="https://xesscorp.github.io/tang_nano_user/docs/_site/images/testing_it_out/synth_place_route_done.png" alt="" /></p>
 
 <p>One of the progress items will be <code class="highlighter-rouge">Bitstream generation completed.</code>
 That means there’s a bitstream available to download into the Nano board’s FPGA.
 To do that, double-click the <code class="highlighter-rouge">Program Device</code> step and the following dialog will appear:</p>
 
-<p><img src="/https://xesscorp.github.io/tang_nano_user/docs/_site/images/testing_it_out/programming_dialog.png" alt="" /></p>
+<p><img src="https://xesscorp.github.io/tang_nano_user/docs/_site/images/testing_it_out/programming_dialog.png" alt="" /></p>
 
 <p>The FPGA can store its bitstream in several ways: in its internal static RAM (volatile),
 or it’s internal flash (nonvolatile), or an external flash, or from an external device
@@ -193,7 +193,7 @@ via an SPI bus.
 We need to tell the device programmer which of those methods to use.
 To do that, right-click on the first entry in the list and select <code class="highlighter-rouge">Configure Device</code>:</p>
 
-<p><img src="/https://xesscorp.github.io/tang_nano_user/docs/_site/images/testing_it_out/configure_device.png" alt="" /></p>
+<p><img src="https://xesscorp.github.io/tang_nano_user/docs/_site/images/testing_it_out/configure_device.png" alt="" /></p>
 
 <p>Then in the <code class="highlighter-rouge">Device configuration</code> dialog, select <code class="highlighter-rouge">SRAM Mode</code> and <code class="highlighter-rouge">SRAM Program</code>
 so the bitstream will be stored in the FPGA’s internal static RAM.
@@ -201,16 +201,16 @@ so the bitstream will be stored in the FPGA’s internal static RAM.
 this design around for very long anyway.)
 Then click the <code class="highlighter-rouge">Save</code> button.</p>
 
-<p><img src="/https://xesscorp.github.io/tang_nano_user/docs/_site/images/testing_it_out/select_SRAM_config.png" alt="" /></p>
+<p><img src="https://xesscorp.github.io/tang_nano_user/docs/_site/images/testing_it_out/select_SRAM_config.png" alt="" /></p>
 
 <p>Upon returning to the previous dialog, right-click on the first entry and select <code class="highlighter-rouge">Program/Configure</code>.
 This initiates the transfer of the bitstream from your PC through the USB cable into the FPGA’s SRAM.</p>
 
-<p><img src="/https://xesscorp.github.io/tang_nano_user/docs/_site/images/testing_it_out/start_programming.png" alt="" /></p>
+<p><img src="https://xesscorp.github.io/tang_nano_user/docs/_site/images/testing_it_out/start_programming.png" alt="" /></p>
 
 <p>A progress bar will appear to track the transfer, but it won’t be around very long:</p>
 
-<p><img src="/https://xesscorp.github.io/tang_nano_user/docs/_site/images/testing_it_out/config_progress.png" alt="" /></p>
+<p><img src="https://xesscorp.github.io/tang_nano_user/docs/_site/images/testing_it_out/config_progress.png" alt="" /></p>
 
 <p>After the bitstream is transferred to the FPGA you should see … well, it’s not really any different!
 That’s because the design we compiled is not really different from the one that was preloaded into
@@ -220,7 +220,7 @@ In order to be sure, we’ll need to change the code so the LED blinks different
 Close the <code class="highlighter-rouge">Programmer</code> dialog window and then go back to the <code class="highlighter-rouge">Design</code> tab and
 double-click the <code class="highlighter-rouge">led.v</code> file to open the Verilog editor:</p>
 
-<p><img src="/https://xesscorp.github.io/tang_nano_user/docs/_site/images/testing_it_out/edit_verilog.png" alt="" /></p>
+<p><img src="https://xesscorp.github.io/tang_nano_user/docs/_site/images/testing_it_out/edit_verilog.png" alt="" /></p>
 
 <p>Change the two instances of <code class="highlighter-rouge">24'd1200_000</code> to <code class="highlighter-rouge">24'd0600_000</code>.
 This will halve the duration of each phase of the <code class="highlighter-rouge">red, green, blue</code> sequence so it will cycle faster.
@@ -233,7 +233,7 @@ remember that from last time.)</p>
 <p>Upon receiving the new bitstream, the LED on the Nano board should cycle through the colors
 twice as fast:</p>
 
-<p><img src="/https://xesscorp.github.io/tang_nano_user/docs/_site/images/testing_it_out/led_cycle.gif" alt="" /></p>
+<p><img src="https://xesscorp.github.io/tang_nano_user/docs/_site/images/testing_it_out/led_cycle.gif" alt="" /></p>
 </div>
             </article>
             <div class="cf"></div>
