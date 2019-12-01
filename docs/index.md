@@ -33,8 +33,9 @@ Onward!
 Preliminaries
 ================
 
-* [Getting Started: Where is Everything?]({{site.url}}/getting_started)
-* [Testing It Out: Running a Pre-Built Example]({{site.url}}/testing_it_out)
+* **[Getting Started: Where is Everything?]({{site.url}}/getting_started)**
+* **[Testing It Out: Running a Pre-Built Example]({{site.url}}/testing_it_out)**
+* **[Nano Board Pinout]({{site.url}}/nano_pinout)**
 
 Projects
 ================

@@ -2,23 +2,23 @@
 <html>
     <head>
         <meta charset="utf-8">
-<title>WHERE IS EVERYTHING? &vert; TANG NANO USER</title>
-<meta name="description" content="Getting Started with the Tang Nano FPGA Board.">
+<title>NANO BOARD PINOUT &vert; TANG NANO USER</title>
+<meta name="description" content="FPGA pin connections on the Tang Nano board.">
 <meta name="keywords" content="Tang Nano, FPGA, Sipeed, GOWIN, home">
 
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://xesscorp.github.io/tang_nano_user/docs/_site/images/logo.png">
-<meta name="twitter:title" content="Where is Everything?">
-<meta name="twitter:description" content="Getting Started with the Tang Nano FPGA Board.">
+<meta name="twitter:title" content="Nano Board Pinout">
+<meta name="twitter:description" content="FPGA pin connections on the Tang Nano board.">
 <meta name="twitter:creator" content="@@xesscorp">
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Where is Everything?">
-<meta property="og:description" content="Getting Started with the Tang Nano FPGA Board.">
-<meta property="og:url" content="https://xesscorp.github.io/tang_nano_user/docs/_site/getting_started/">
+<meta property="og:title" content="Nano Board Pinout">
+<meta property="og:description" content="FPGA pin connections on the Tang Nano board.">
+<meta property="og:url" content="https://xesscorp.github.io/tang_nano_user/docs/_site/nano_pinout/">
 <meta property="og:site_name" content="Tang Nano User">
 <meta property="og:image" content="https://xesscorp.github.io/tang_nano_user/docs/_site/images/">
 
@@ -26,7 +26,7 @@
 
 
 
-<link rel="canonical" href="https://xesscorp.github.io/tang_nano_user/docs/_site/getting_started/">
+<link rel="canonical" href="https://xesscorp.github.io/tang_nano_user/docs/_site/nano_pinout/">
 <link href="https://xesscorp.github.io/tang_nano_user/docs/_site/feed.xml" type="application/atom+xml" rel="alternate" title="Tang Nano User Feed">
 
 
@@ -106,101 +106,31 @@
                 </div>
                 <div class="notepad-page-title row">
                     <div class="small-12 columns">
-                        <h1>Where is Everything?</h1>
+                        <h1>Nano Board Pinout</h1>
                     </div>
                 </div>
             </header>
             <article class="notepad-page-content">
-                <div><p>I ordered my Tang Nano board from <a href="https://www.seeedstudio.com/Sipeed-Tang-Nano-FPGA-board-powered-by-GW1N-1-FPGA-p-4304.html">Seeed</a>
-and this is what I got:</p>
+                <div><p>Before you can go somewhere new, you gotta know where you are.</p>
 
-<p><img src="https://xesscorp.github.io/tang_nano_user/docs/_site/images/getting_started/seeed_pckg.png" alt="" /></p>
+<p>In the <a href="https://xesscorp.github.io/tang_nano_user/docs/_site/testing_it_out">previous post</a>, I compiled and downloaded
+an existing example design to verify that the GOWIN EDA software was working.
+But to create new designs of your own, you’ll need to know what the pins
+of the FPGA are connected to on the Nano board.
+(For example, what FPGA pins are connected to the two pushbuttons?)
+That information is contained in the <a href="http://dl.sipeed.com/TANG/Nano/HDK/Tang-NANO-2704(Schematic).pdf">Nano board schematic</a>,
+but getting it in a useful form requires you to trace the wiring from the FPGA pins to other parts on the board.
+Even with a small schematic, that’s more painful than it should be.</p>
 
-<p>Yep, that’s it: a board and two headers.
-No documentation. Not even a link.
-Not exactly the friendly introduction to FPGAs you’d hoped for.
-So what now?</p>
+<p>To make it a bit easier, I created a <a href="https://github.com/xesscorp/tang_nano_user/Sipeed_Tang_Nano/HDK/pinout.xlsx">spreadsheet</a>
+that lists where the FPGA pins are connected.
+It also includes a <a href="https://xesscorp.github.io/tang_nano_user/docs/_site/images/nano_pinout/pinout.png">board image</a>
+showing where the FPGA pins exit the board through the 0.1”-spaced prototyping headers.</p>
 
-<p>Well, everything is available on the internet if you look hard enough.
-In order to save you the trouble, here’s a list of stuff you’ll want:</p>
-
-<ul>
-  <li><strong><a href="http://tangnano.sipeed.com/en/">Sipeed Tang Nano Introduction</a></strong> is Sipeed’s intro to their board, complete with broken links and everything!
-It does list the major components of the board.</li>
-  <li><strong><a href="http://dl.sipeed.com/TANG/Nano/HDK/Tang-NANO-2704(Schematic).pdf">Tang Nano Schematic</a></strong> shows how the board’s parts are connected.
-This is important for finding out what’s connected to the FPGA’s pins.
-You can also get a <a href="http://dl.sipeed.com/TANG/Nano/HDK/Tang-NANO-2704(Assembly%20drawing).pdf">drawing</a> that shows where the parts are
-located on the board if that interests you.</li>
-  <li><strong><a href="http://dl.sipeed.com/TANG/Nano/HDK/GW1N-Datasheet(English)/GW1N%20series%20of%20FPGA%20Products%20Data%20Sheet.pdf">GW1N FPGA Datasheet</a></strong>
-is Sipeed’s copy of GOWIN’s FPGA datasheet.
-(You can get the same thing <a href="https://www.gowinsemi.com/en/document/chkLogin/?a=upload%2Fdatabase_doc%2F178%2Fdocument%2F5da91c1e26c4e.pdf">here</a>,
-but you’ll need to register and then sign in to get it. You even have to pass a CAPTCHA. <em>Sigh.</em>)</li>
-  <li><strong><a href="http://dl.sipeed.com/TANG/Nano/HDK/GW1N-Datasheet(English)/GW1N-1%20pinout.xlsx">GW1N Pinout Spreadsheet</a></strong> lists the pins
-and their functions for all the GW1N-1 FPGA packages.
-The <strong>QN48</strong> column has the pin numbers for the particular FPGA package used on the Nano board.</li>
-  <li><strong><a href="https://www.gowinsemi.com/en/support/download_eda/">GOWIN EDA software</a></strong> compiles VHDL/Verilog code into bitstreams for the FPGA.
-You need this and you’ll <em>have</em> to register and sign in to get it.
-There’s no way around it (so far).
-While you’re there, you might as well get the
-<a href="https://www.gowinsemi.com/en/document/chkLogin/?a=upload%2Fdatabase_doc%2F379%2Fdocument%2F5dca6a3577b17.pdf">user manual</a>.</li>
-  <li><strong><a href="https://www.gowinsemi.com/en/support/license/">Licenses</a></strong> from GOWIN are needed to enable the software.
-Fulfilling your license request may take a while depending upon how many hundreds or thousands of people buy this board.
-As an alternative, you can use Sipeed’s <a href="http://dl.sipeed.com/TANG/Nano/IDE/gowin.lic">license</a>,
-their <a href="http://dl.sipeed.com/TANG/Nano/IDE/gowin_Synplifypro.lic">Synplify license</a>,
-and these <a href="http://dl.sipeed.com/TANG/Nano/IDE/license_readme.txt">instructions</a>.
-I’ll go over this in more detail below.</li>
-  <li><strong><a href="https://github.com/sipeed/Tang-Nano-examples">Design examples</a></strong> for the Nano board are helpful for getting
-started and verifying that your EDA software is working.</li>
-</ul>
-
-<p>The next step is to install the EDA software and set up the license.
-I’m using Windows 10, so I just double-clicked the <code class="highlighter-rouge">Gowin_V1.9.2Beta_win.zip</code> file and then double-clicked
-the <code class="highlighter-rouge">Gowin_V1.9.2Beta_win.exe</code> installer that was inside:</p>
-
-<p><img src="https://xesscorp.github.io/tang_nano_user/docs/_site/images/getting_started/EDA_install.png" alt="" /></p>
-
-<p>I agreed to the license terms and installed in the default location.
-After the installation completed, I double-clicked the <code class="highlighter-rouge">Gowin_V1.9.2Beta</code> icon and the following screen appeared:</p>
-
-<p><img src="https://xesscorp.github.io/tang_nano_user/docs/_site/images/getting_started/initial_EDA_screen.png" alt="" /></p>
-
-<p>Next it’s time to install the license:</p>
-
-<p><img src="https://xesscorp.github.io/tang_nano_user/docs/_site/images/getting_started/manage_lic.png" alt="" /></p>
-
-<p>I received licenses from GOWIN for their software and for Synplify Pro, both of which
-I placed in a top-level directory called <code class="highlighter-rouge">.Gowin</code> (but you can use whatever you like).
-I selected the option <code class="highlighter-rouge">Use Local License File</code> and entered the location of the GOWIN license file.
-(I’ll ignore the Synplify Pro license for now.)
-Then click <code class="highlighter-rouge">Save</code> and the software is ready to go.</p>
-
-<p><img src="https://xesscorp.github.io/tang_nano_user/docs/_site/images/getting_started/local_lic.png" alt="" /></p>
-
-<p>If you haven’t got any licenses from GOWIN, <del>Sipeed lets you “borrow” one from their license server</del>.
-(A few days after I posted this, the Sipeed floating license stopped working.
-I’ll update this as the situation changes, but for now using their floating license won’t work.)
-Just select <code class="highlighter-rouge">Use Floating License Server</code> and type in the server’s IP address
-(read Sipeed’s <a href="http://dl.sipeed.com/TANG/Nano/IDE/license_readme.txt">license instructions</a>
-to get the most up-to-date IP address).
-Then click the <code class="highlighter-rouge">Test Connection</code> button to see if a valid license has been checked out:</p>
-
-<p><img src="https://xesscorp.github.io/tang_nano_user/docs/_site/images/getting_started/float_lic.png" alt="" /></p>
-
-<p>You’ll get a <code class="highlighter-rouge">Successed</code> (sic) message if a valid license was obtained.
-Then click <code class="highlighter-rouge">Save</code> and the software is enabled <em>for the current session</em>.
-Each time you start the software, it will automatically reach out to the Sipeed
-server to get another license.
-If you’re not connected to the internet or the license server is not available, then
-your software won’t run.
-(That’s one reason you might want to get your own local license.)</p>
-
-<p><img src="https://xesscorp.github.io/tang_nano_user/docs/_site/images/getting_started/float_lic_test.png" alt="" /></p>
-
-<p>At this point you should have working software that will create bitstreams for the FPGA.
-Let’s try it out!</p>
+<p><img src="https://xesscorp.github.io/tang_nano_user/docs/_site/images/nano_pinout/pinout.png" width="600" /></p>
 
 <ul>
-  <li><strong><a href="https://xesscorp.github.io/tang_nano_user/docs/_site/testing_it_out">Next: Testing It Out</a></strong></li>
+  <li><strong><a href="https://xesscorp.github.io/tang_nano_user/docs/_site/testing_it_out">Prev: Testing It Out</a></strong></li>
 </ul>
 </div>
             </article>

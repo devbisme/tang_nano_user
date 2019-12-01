@@ -68,7 +68,9 @@ Then click `Save` and the software is ready to go.
 
 ![]({{site.url}}/images/getting_started/local_lic.png)
 
-If you haven't got any licenses from GOWIN, Sipeed lets you "borrow" one from their license server.
+If you haven't got any licenses from GOWIN, ~~Sipeed lets you "borrow" one from their license server~~.
+(A few days after I posted this, the Sipeed floating license stopped working.
+I'll update this as the situation changes, but for now using their floating license won't work.)
 Just select `Use Floating License Server` and type in the server's IP address
 (read Sipeed's [license instructions](http://dl.sipeed.com/TANG/Nano/IDE/license_readme.txt)
 to get the most up-to-date IP address).
@@ -89,4 +91,4 @@ your software won't run.
 At this point you should have working software that will create bitstreams for the FPGA.
 Let's try it out!
 
-**[Next: Testing It Out]({{site.url}}/testing_it_out)**
+* **[Next: Testing It Out]({{site.url}}/testing_it_out)**
