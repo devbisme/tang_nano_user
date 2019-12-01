@@ -16,7 +16,7 @@ That information is contained in the [Nano board schematic](http://dl.sipeed.com
 but getting it in a useful form requires you to trace the wiring from the FPGA pins to other parts on the board.
 Even with a small schematic, that's more painful than it should be.
 
-To make it a bit easier, I created a [spreadsheet](https://github.com/xesscorp/tang_nano_user/Sipeed_Tang_Nano/HDK/pinout.xlsx)
+To make it a bit easier, I created a [spreadsheet](https://github.com/xesscorp/tang_nano_user/blob/master/Sipeed_Tang_Nano/HDK/pinout.xlsx)
 that lists where the FPGA pins are connected.
 It also includes a [board image]({{site.url}}/images/nano_pinout/pinout.png)
 showing where the FPGA pins exit the board through the 0.1"-spaced prototyping headers.
