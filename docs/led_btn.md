@@ -11,7 +11,8 @@ I hate making programming videos even more.
 Naturally, I had to make [one](https://youtu.be/F5hlv3XTcO0).
 
 To be fair, the GOWIN software is GUI-based, so a video on how to use it
-to create a simple FPGA design makes *some* sense.
+to create a [simple LED + pushbutton FPGA design](https://github.com/xesscorp/tang_nano_user/tree/master/projects/led_btn)
+makes *some* sense.
 But this video will age badly as the software developers move menu items
 around and introduce new icons and dialog screens, *because that's what
 they do!*
