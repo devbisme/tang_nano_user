@@ -25,3 +25,4 @@ showing where the FPGA pins exit the board through the 0.1"-spaced prototyping h
 
 
 * **[Prev: Testing It Out]({{site.url}}/testing_it_out)**
+* **[Next: LED + Button]({{site.url}}/led_btn)**

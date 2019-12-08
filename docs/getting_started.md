@@ -68,9 +68,9 @@ Then click `Save` and the software is ready to go.
 
 ![]({{site.url}}/images/getting_started/local_lic.png)
 
-If you haven't got any licenses from GOWIN, ~~Sipeed lets you "borrow" one from their license server~~.
-(A few days after I posted this, the Sipeed floating license stopped working.
-I'll update this as the situation changes, but for now using their floating license won't work.)
+If you haven't got any licenses from GOWIN, Sipeed lets you "borrow" one from their floating license server.
+(Sipeed says their server is unstable so they reboot it once a week.
+If your software won't run or stops running, this may be the reason.)
 Just select `Use Floating License Server` and type in the server's IP address
 (read Sipeed's [license instructions](http://dl.sipeed.com/TANG/Nano/IDE/license_readme.txt)
 to get the most up-to-date IP address).
