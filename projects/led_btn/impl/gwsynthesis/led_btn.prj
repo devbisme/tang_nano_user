@@ -1,12 +1,12 @@
 <!DOCTYPE gowin-synthesis-project>
 <Project>
     <Version>Beta</Version>
-    <Device id="GW1N-1" package="QFN48" speed="6"/>
+    <Device id="GW1N-1" package="QFN48" speed="6" partNumber="GW1N-LV1QN48C6/I5"/>
     <FileList>
-        <File type="verilog"  path="C:\xesscorp\BLOGS\tang_nano_user\projects\led_btn\src\led_btn.v"/>
+        <File type="verilog"  path="/home/devb/xesscorp/BLOGS/tang_nano_user/projects/led_btn/src/led_btn.v"/>
     </FileList>
     <OptionList>
         <Option type="top_module"  value="led_btn"/>
-        <Option type="output_file"  value="C:\xesscorp\BLOGS\tang_nano_user\projects\led_btn\impl\gwsynthesis\led_btn.vg"/>
+        <Option type="output_file"  value="/home/devb/xesscorp/BLOGS/tang_nano_user/projects/led_btn/impl/gwsynthesis/led_btn.vg"/>
     </OptionList>
 </Project>

@@ -1,7 +1,7 @@
-//Copyright (C)2014-2019 Gowin Semiconductor Corporation.
+//Copyright (C)2014-2020 Gowin Semiconductor Corporation.
 //All rights reserved.
 //File Title: Bitstream file
-//GOWIN Version: V1.9.2Beta
+//GOWIN Version: V1.9.3.01Beta
 //Part Number: GW1N-LV1QN48C6/I5
 //Device-package: GW1N-1-QFN48
 //BackgroundProgramming: OFF
@@ -15,7 +15,7 @@
 //SecurityBit: ON
 //SecureMode: OFF
 //JTAGAsRegularIO: OFF
-//Created Time: Fri Dec 06 14:15:16 2019
+//Created Time: Thu Feb 20 17:00:46 2020
 1011110110100000
 1111111111111111
 1010010111000011

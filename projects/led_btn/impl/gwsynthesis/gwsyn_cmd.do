@@ -1,3 +1,3 @@
 -p GW1N-1-QFN48-6
--i C:\xesscorp\BLOGS\tang_nano_user\projects\led_btn\src\led_btn.v
+-i /home/devb/xesscorp/BLOGS/tang_nano_user/projects/led_btn/src/led_btn.v
 -top_module led_btn

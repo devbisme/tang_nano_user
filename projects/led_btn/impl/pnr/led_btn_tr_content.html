@@ -8,7 +8,7 @@ div#content { width: 100%; margin: }
 hr { margin-top: 30px; margin-bottom: 30px; }
 h1, h3 { text-align: center; }
 h1 {margin-top: 50px; }
-table, th, td { border: 1px solid #aaa; }
+table, th, td {white-space:pre; border: 1px solid #aaa; }
 table { border-collapse:collapse; margin-top: 10px; margin-bottom: 20px; width: 100%; }
 th, td { padding: 5px 5px 5px 5px; }
 th { color: #fff; font-weight: bold; background-color: #0084ff; }
@@ -26,11 +26,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Design File</td>
-<td>C:/xesscorp/BLOGS/tang_nano_user/projects/led_btn/impl/gwsynthesis/led_btn.vg</td>
+<td>/home/devb/xesscorp/BLOGS/tang_nano_user/projects/led_btn/impl/gwsynthesis/led_btn.vg</td>
 </tr>
 <tr>
 <td class="label">Physical Constraints File</td>
-<td>C:\xesscorp\BLOGS\tang_nano_user\projects\led_btn\src\led_btn.cst</td>
+<td>/home/devb/xesscorp/BLOGS/tang_nano_user/projects/led_btn/src/led_btn.cst</td>
 </tr>
 <tr>
 <td class="label">Timing Constraint File</td>
@@ -38,7 +38,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">GOWIN version</td>
-<td>V1.9.2Beta</td>
+<td>V1.9.3.01Beta</td>
 </tr>
 <tr>
 <td class="label">Part Number</td>
@@ -46,12 +46,12 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Created Time</td>
-<td>Fri Dec 06 14:15:16 2019
+<td>Thu Feb 20 17:00:47 2020
 </td>
 </tr>
 <tr>
 <td class="label">Legal Announcement</td>
-<td>Copyright (C)2014-2019 Gowin Semiconductor Corporation.                      All rights reserved.</td>
+<td>Copyright (C)2014-2020 Gowin Semiconductor Corporation. All rights reserved.</td>
 </tr>
 </table>
 <h1><a name="Summary">Timing Summaries</a></h1>
@@ -116,7 +116,9 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <tr>
 <th>NO.</th>
 <th>Clock Name</th>
-<th>Fmax</th>
+<th>Constraint</th>
+<th>Actual Fmax</th>
+<th>Logic Level</th>
 <th>Entity</th>
 </tr>
 </table>

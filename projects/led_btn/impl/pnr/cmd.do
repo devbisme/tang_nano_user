@@ -1,9 +1,14 @@
--d C:/xesscorp/BLOGS/tang_nano_user/projects/led_btn/impl/gwsynthesis/led_btn.vg
+-d /home/devb/xesscorp/BLOGS/tang_nano_user/projects/led_btn/impl/gwsynthesis/led_btn.vg
 -p GW1N-1-QFN48-6
 -pn GW1N-LV1QN48C6/I5
--cst C:\xesscorp\BLOGS\tang_nano_user\projects\led_btn\src\led_btn.cst
--cfg C:\xesscorp\BLOGS\tang_nano_user\projects\led_btn\impl\pnr\device.cfg
+-cst /home/devb/xesscorp/BLOGS/tang_nano_user/projects/led_btn/src/led_btn.cst
+-cfg /home/devb/xesscorp/BLOGS/tang_nano_user/projects/led_btn/impl/pnr/device.cfg
 -bit
 -tr
 -ph
+-sdf
+-oc
+-ibs
+-posp
+-o
 -timing

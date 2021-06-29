@@ -15,7 +15,7 @@ div#catalog a:hover { color: #fff; background: #0084ff; }
 hr { margin-top: 30px; margin-bottom: 30px; }
 h1, h3 { text-align: center; }
 h1 {margin-top: 50px; }
-table, th, td { border: 1px solid #aaa; }
+table, th, td { white-space:pre; border: 1px solid #aaa; }
 table { border-collapse:collapse; margin-top: 10px; margin-bottom: 20px; width: 100%; }
 th, td { padding: 5px 5px 5px 5px; }
 th { color: #fff; font-weight: bold; background-color: #0084ff; }
@@ -57,11 +57,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Design File</td>
-<td>C:/xesscorp/BLOGS/tang_nano_user/projects/led_btn/impl/gwsynthesis/led_btn.vg</td>
+<td>/home/devb/xesscorp/BLOGS/tang_nano_user/projects/led_btn/impl/gwsynthesis/led_btn.vg</td>
 </tr>
 <tr>
 <td class="label">Physical Constraints File</td>
-<td>C:\xesscorp\BLOGS\tang_nano_user\projects\led_btn\src\led_btn.cst</td>
+<td>/home/devb/xesscorp/BLOGS/tang_nano_user/projects/led_btn/src/led_btn.cst</td>
 </tr>
 <tr>
 <td class="label">Timing Constraints File</td>
@@ -69,7 +69,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">GOWIN Version</td>
-<td>V1.9.2Beta</td>
+<td>V1.9.3.01Beta</td>
 </tr>
 <tr>
 <td class="label">Part Number</td>
@@ -77,23 +77,23 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Created Time</td>
-<td>Fri Dec 06 14:15:16 2019
+<td>Thu Feb 20 17:00:47 2020
 </td>
 </tr>
 <tr>
 <td class="label">Legal Announcement</td>
-<td>Copyright (C)2014-2019 Gowin Semiconductor Corporation. All rights reserved.</td>
+<td>Copyright (C)2014-2020 Gowin Semiconductor Corporation. All rights reserved.</td>
 </tr>
 </table>
 <h1><a name="PnR_Details">PnR Details</a></h1>
 <!--<h1><a name="Summary">PnR Summaries</a></h1>-->
 <h2><a name="Placer">Placer:</a></h2>
 <p style="font-size: 14px;">Starting Placer:</p>
-<p style="font-size: 14px;">&nbsp &nbsp  Placement Phase 0 ...  &nbsp  REAL time: 0 secs</p>
-<p style="font-size: 14px;">&nbsp &nbsp  Placement Phase 1 ...  &nbsp  REAL time: 0.023 secs</p>
-<p style="font-size: 14px;">&nbsp &nbsp  Placement Phase 2 ...  &nbsp  REAL time: 0.001 secs</p>
-<p style="font-size: 14px;">&nbsp &nbsp  Placement Phase 3 ...  &nbsp  REAL time: 0.973 secs</p>
-<p style="font-size: 14px;">Total REAL time to Placement completion: 0.997 secs.<p><br/>
+<p style="font-size: 14px;">&nbsp &nbsp  Placement Phase 0 ...  &nbsp  REAL time: 0.001087 secs</p>
+<p style="font-size: 14px;">&nbsp &nbsp  Placement Phase 1 ...  &nbsp  REAL time: 0.061648 secs</p>
+<p style="font-size: 14px;">&nbsp &nbsp  Placement Phase 2 ...  &nbsp  REAL time: 0.000558 secs</p>
+<p style="font-size: 14px;">&nbsp &nbsp  Placement Phase 3 ...  &nbsp  REAL time: 3.05408 secs</p>
+<p style="font-size: 14px;">Total REAL time to Placement completion: 3.11738 secs.<p><br/>
 <h2><a name="Resource_Usage_Summary">Resource Usage Summary:</a></h2>
 <table class="summary_table">
 <tr>
@@ -102,117 +102,112 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td><b>Utilization</b></td>
 </tr>
 <tr>
-<td class="label">Logics</td>
+<td class="label">Logic</td>
 <td>0/1152</td>
 <td>0%</td>
 </tr>
 <tr>
-<td class="label">&nbsp &nbsp --LUTs,ALUs,ROM16s</td>
-<td>0(0 LUTs, 0 ALUs, 0 ROM16s)</td>
+<td class="label">&nbsp &nbsp --LUT,ALU,ROM16</td>
+<td>0(0 LUT, 0 ALU, 0 ROM16)</td>
 <td>-</td>
 </tr>
 <tr>
-<td class="label">&nbsp &nbsp --SSRAMs(RAM16s)</td>
+<td class="label">&nbsp &nbsp --SSRAM(RAM16)</td>
 <td>0</td>
 <td>-</td>
 </tr>
 <tr>
-<td class="label">Registers</td>
+<td class="label">Register</td>
 <td>0/945</td>
 <td>0%</td>
 </tr>
 <tr>
-<td class="label">&nbsp &nbsp --logic Registers</td>
+<td class="label">&nbsp &nbsp --logic Register</td>
 <td>0/864</td>
 <td>0%</td>
 </tr>
 <tr>
-<td class="label">&nbsp &nbsp --I/O Registers</td>
+<td class="label">&nbsp &nbsp --I/O Register</td>
 <td>0/81</td>
 <td>0%</td>
 </tr>
 <tr>
-<td class="label">CLSs</td>
+<td class="label">CLS</td>
 <td>0/576</td>
 <td>0%</td>
 </tr>
 <tr>
-<td class="label">I/O Ports</td>
+<td class="label">I/O Port</td>
 <td>2</td>
 <td>-</td>
 </tr>
 <tr>
-<td class="label">I/O Bufs</td>
+<td class="label">I/O Buf</td>
 <td>2</td>
 <td>-</td>
 </tr>
 <tr>
-<td class="label"> &nbsp &nbsp --Input Bufs</td>
+<td class="label"> &nbsp &nbsp --Input Buf</td>
 <td>1</td>
 <td>-</td>
 </tr>
 <tr>
-<td class="label"> &nbsp &nbsp --Output Bufs</td>
+<td class="label"> &nbsp &nbsp --Output Buf</td>
 <td>1</td>
 <td>-</td>
 </tr>
 <tr>
-<td class="label"> &nbsp &nbsp --Inout Bufs</td>
+<td class="label"> &nbsp &nbsp --Inout Buf</td>
 <td>0</td>
 <td>-</td>
 </tr>
 <tr>
-<td class="label">IOLOGICs</td>
+<td class="label">IOLOGIC</td>
 <td>0</td>
-<td>-</td>
-</tr>
-<tr>
-<td class="label">IODELAYs</td>
-<td>0/27</td>
 <td>0%</td>
 </tr>
 <tr>
-<td class="label">BSRAMs</td>
-<td>0/4</td>
+<td class="label">BSRAM</td>
+<td>0</td>
 <td>0%</td>
 </tr>
 <tr>
-<td class="label">PLLs</td>
+<td class="label">PLL</td>
 <td>0/1</td>
 <td>0%</td>
 </tr>
 <tr>
-<td class="label">DCSs</td>
+<td class="label">DCS</td>
 <td>0/4</td>
 <td>0%</td>
 </tr>
 <tr>
-<td class="label">DQCEs</td>
+<td class="label">DQCE</td>
 <td>0/12</td>
 <td>0%</td>
 </tr>
 <tr>
-<td class="label">OSCs</td>
+<td class="label">OSC</td>
 <td>0/1</td>
 <td>0%</td>
 </tr>
 <tr>
-<td class="label">User Flashes</td>
+<td class="label">User Flash</td>
 <td>0/1</td>
 <td>0%</td>
 </tr>
 <tr>
-<td class="label">CLKDIVs</td>
+<td class="label">CLKDIV</td>
 <td>0/2</td>
 <td>0%</td>
 </tr>
 <tr>
-<td class="label">DLLDLYs</td>
+<td class="label">DLLDLY</td>
 <td>0/2</td>
 <td>0%</td>
 </tr>
 <tr>
-<td class="label">DHCENs</td>
+<td class="label">DHCEN</td>
 <td>0/4</td>
 <td>0%</td>
 </tr>
@@ -243,10 +238,10 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <br/>
 <h2><a name="Router">Router:</a></h2>
 <p  style="font-size: 14px;">Starting Router:</p>
-<p  style="font-size: 14px;">&nbsp &nbsp  Route Phase 0: 5 unrouted; &nbsp REAL time: 0 secs</p>
-<p  style="font-size: 14px;">&nbsp &nbsp  Route Phase 1: 1 unrouted; &nbsp REAL time: 0.013 secs</p>
-<p  style="font-size: 14px;">&nbsp &nbsp  Route Phase 2: 0 unrouted; &nbsp REAL time: 0.005 secs</p>
-<p  style="font-size: 14px;">  Total REAL time to Router completion: 0.018 secs.</p><br/>
+<p  style="font-size: 14px;">&nbsp &nbsp  Route Phase 0: 5 unrouted; &nbsp REAL time: 6.5e-05 secs</p>
+<p  style="font-size: 14px;">&nbsp &nbsp  Route Phase 1: 1 unrouted; &nbsp REAL time: 0.04181 secs</p>
+<p  style="font-size: 14px;">&nbsp &nbsp  Route Phase 2: 0 unrouted; &nbsp REAL time: 0.011319 secs</p>
+<p  style="font-size: 14px;">  Total REAL time to Router completion: 0.053194 secs.</p><br/>
 <h2><a name="Global_Clock_Usage_Summary">Global Clock Usage Summary:</a></h2>
 <table class="summary_table">
 <tr>
@@ -760,7 +755,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </table>
 <br/>
 <p style="font-size: 16px;"><b>  Placement and routing completed.</b></p>
-<p style="font-size: 16px;"><b><a name="Memory_Usage">Memory usage: 70MB.</a></b></p>
+<p style="font-size: 16px;"><b><a name="Memory_Usage">Memory usage: 167MB.</a></b></p>
 </div><!-- content -->
 </div><!-- main_wrapper -->
 </body>

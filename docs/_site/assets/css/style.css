@@ -210,7 +210,7 @@ main, .notepad-share-icons, .notepad-disqus {
   text-align: center;
   background-size: cover;
   background-color: black;
-  background-image: url("https://xesscorp.github.io/tang_nano_user/docs/_site/images/tang-nano-background.jpg");
+  background-image: url("http://localhost:4000/images/tang-nano-background.jpg");
 }
 
 .notepad-site-head .notepad-site-head-content.with-bg-cover {
@@ -1100,7 +1100,7 @@ code {
 
 .tooltipContainer a {
   width: 100%;
-  background: transparent url("https://xesscorp.github.io/tang_nano_user/docs/_site/images/sprites.png") 0px 0px no-repeat;
+  background: transparent url("http://localhost:4000/images/sprites.png") 0px 0px no-repeat;
   padding: 0;
   left: 0;
   top: 0;

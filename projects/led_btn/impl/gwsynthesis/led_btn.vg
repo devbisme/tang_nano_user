@@ -1,10 +1,10 @@
 //
 //Written by GowinSynthesis
-//Product Version "GowinSynthesis V1.9.2Beta"
-//Fri Dec 06 14:15:14 2019
+//Product Version "GowinSynthesis V1.9.3.01Beta"
+//Thu Feb 20 17:00:42 2020
 
 //Source file index table:
-//file0 "\C:/xesscorp/BLOGS/tang_nano_user/projects/led_btn/src/led_btn.v"
+//file0 "\/home/devb/xesscorp/BLOGS/tang_nano_user/projects/led_btn/src/led_btn.v"
 `timescale 100 ps/100 ps
 module led_btn ( btn_i,led_o);
 input btn_i;
@@ -12,21 +12,21 @@ output led_o;
 wire btn_i_3;
 wire VCC;
 wire GND;
-IBUF btn_i_ibuf4 (
-.I(btn_i),
-.O(btn_i_3) 
+  IBUF btn_i_ibuf4 (
+    .I(btn_i),
+    .O(btn_i_3) 
 );
-OBUF led_o_obuf5 (
-.I(btn_i_3),
-.O(led_o) 
+  OBUF led_o_obuf5 (
+    .I(btn_i_3),
+    .O(led_o) 
 );
-VCC VCC_ins6 (
-.V(VCC) 
+  VCC VCC_ins6 (
+    .V(VCC) 
 );
-GSR VCC_ins7 (
-.GSRI(VCC) 
+  GSR VCC_ins7 (
+    .GSRI(VCC) 
 );
-GND GND_cZ (
-.G(GND)
+  GND GND_cZ (
+  .G(GND)
 );
-endmodule
+endmodule /* led_btn */

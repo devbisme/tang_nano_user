@@ -8,20 +8,20 @@ dropcap:	      true
 # Change url to your domain. Leave localhost server or blank when working locally.
 # or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same 
 # whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
-url:        	 https://xesscorp.github.io/tang_nano_user/docs/_site
+url:        	 https://devbisme.github.io/tang_nano_user/docs/_site
 
 
 # Owner/author information
 owner:
   name:           XESS Corp.
-  avatar:         xesscorp.png
+  avatar:         devb-pic.jpg
   email:          tang_nano_user@xess.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
   description:    Former manufacturer of FPGA development boards.
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        "@xesscorp"
-  twitter2:       "@devbisme"
-  github:         xesscorp    
+  twitter:        "@devbisme"
+  twitter2:       "@xesscorp"
+  github:         devbisme    
   # For Google Authorship https://plus.google.com/authorship
   #google_plus:    https://plus.google.com/u/0/+AmeyJadiye
 
@@ -49,7 +49,7 @@ links:
   - title: Blog
     url: /blog
   - title: Github
-    url: "http://github.com/xesscorp/tang_nano_user"
+    url: "http://github.com/devbisme/tang_nano_user"
     external: true
   - title: About
     url: /about
