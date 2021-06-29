@@ -20,4 +20,4 @@ As such, I'll create posts describing my experiments and I'll store
 the design files in the [Github repository](www.github.com/xesscorp/tang_nano_user).
 Feel free to use them as they become available: everything is covered under open source licenses.
 
-* Website: [http://devbisme.github.io/tang_nano_user](http://xesscorp.github.io/tang_nano_user)
+* Website: [http://devbisme.github.io/tang_nano_user](http://devbisme.github.io/tang_nano_user)
